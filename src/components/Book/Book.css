@@ -1,0 +1,72 @@
+.book{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    width: 320px;
+    background-color: #A6603A;
+    margin: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.book .picture{
+    width: 100%;
+    height: 300px;
+}
+
+
+.book .book-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.book-details .box{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.book-details .title{
+    width: 160px;
+    text-align: center;
+}
+
+.book-details .overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    background-color: #A6603A;
+    opacity: 0.9;
+    color: #ffffff;
+    box-sizing: border-box; 
+    padding: 10px;
+    overflow-y: auto; 
+    transition: all 0.5s ease-in-out;
+    transform: translateY(100%);
+}
+
+.book-details:hover .overview{
+    transform: translateY(0%);
+}
+
+.price{
+    background-color: #BF7B49;
+    width: 100px;
+    height: 55px;
+    border-radius: 20%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #BF7B49;
+    box-shadow: inset 0 2px 5px #00000F;
+}
